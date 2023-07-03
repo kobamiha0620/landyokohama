@@ -1,0 +1,317 @@
+@use "./module/variable"as var;
+
+
+
+.area{
+    background-color: var.$yel;
+    .blc__inner{
+        padding: 57px 0;
+        position: relative;
+    }
+    &__scrollimg{
+        width: 264px;
+        height: 165px;
+        overflow-y: scroll;
+        img{
+        width: 100%;
+        height: auto;
+        }
+    }
+    &__ttl{
+        text-indent: -9999px;
+        white-space: nowrap;
+        width: calc(944/4)+px;
+        height: 52px;
+        background-size: 100% auto;
+        margin: 0 auto 30px;
+    }
+    &__map{
+        margin: 0 auto 100px;
+        background-color: #FFF;
+        border: solid 5px #000;
+        border-radius: 20px;
+        padding: 60px 90px 35px;
+
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+    &__spot{
+        position: relative;
+        background-color: #FFF;
+        border: solid 5px #000;
+        border-radius: 20px;
+        padding: 80px 28px 36px;
+        &--wrapper{
+            display: flex;
+            justify-content: space-between;
+            .area__spot{
+                width: 330px;
+                max-width: 330px;
+            }
+        }
+        &--ttl{
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: -42px;
+            white-space: nowrap;
+            text-indent: -9999px;
+            background-size: 100% auto;
+            width: 110px;
+            height: 110px;
+            margin: 0;
+        }
+        &--txt{
+            text-align: center;
+            @include var.fz(24);
+            font-weight: bold;
+            margin: 0 auto 18px;
+        }
+    }
+    .area__spot1{
+        padding-right: 70px;
+        padding-left: 70px;
+        margin: 0 0 72px;
+        &--topblc{
+            margin: 40px auto 0;
+            &-img{
+                width: 100%;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+        &--chara1{
+            position: absolute;
+            width: 88px;
+            right: 32px;
+            top: -55px;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        &--chara2{
+            position: absolute;
+            width: 109px;
+            left: 43px;
+            top: -60px;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        &--blc{
+            display: flex;
+            justify-content: space-between;
+            &-small{
+                max-width: 264px;
+            }
+            &-img{
+                background-color: #F9D7E6;
+                width: 264px;
+                height: 165px;
+                max-width: 264px;
+                max-height: 165px;
+                margin: 0 auto 16px;
+                position: relative;
+                img{
+                    width: 100%;
+                    height: auto;
+                }
+                &test{
+                    margin-top: 8px;
+                    width: 180px;
+                    position: absolute;
+                    display: block;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                    -webkit-transform: translate(-50%, -50%);
+                    -ms-transform: translate(-50%, -50%);
+
+                }
+                &main{
+                    max-width: 264px;
+                    max-height: 165px;
+                    overflow: scroll;
+                    img{
+ 
+                        display: block;
+                    }
+                }
+            }
+            &-txt{
+                text-align: center;
+                @include var.fz(16);
+                margin: 0 auto 14px; 
+            }
+            &-txt2{
+                text-align: center;
+                @include var.fz(13);
+                margin: 0 auto;
+                line-height: 1.7;
+                a{
+                    color: #00A0E9;
+                    display: block;
+                    margin-top: 10px;
+                }
+            }
+            &-note{
+                @include var.fz(12);
+                text-indent: -1em;
+                padding-left: 1em;
+                margin: 5px 0 0;
+            }
+        }
+    }
+    .area__spot2{
+        &--chara1{
+            position: absolute;
+            width: 87px;
+            left: 0;
+            top: -36px;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+        &--chara2{
+            position: absolute;
+            width: 114px;
+            right: -10px;
+            top: -34px;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+
+    }
+    .area__spot3{
+        &--chara1{
+            position: absolute;
+            width: 56px;
+            right: 34px;
+            top: -27px;
+            img{
+                width: 100%;
+                height: auto;
+            }
+        }
+    }
+    //access
+    @media screen and (max-width: var.$spbp) {
+        .blc__inner{
+            padding: 16.5vw 6.66vw;
+        }
+        &__ttl{
+            margin: 0 auto 5.8vw;
+        }
+
+        &__map{
+            margin: 0 auto 21vw;
+            width: 100%;
+            border-radius: 20px;
+            padding: 10vw 5vw 5vw;
+
+        }
+        &__spot{
+            padding: 21vw 9vw 0;
+            &--wrapper{
+                display: block;
+                .area__spot{
+                    width:100%;
+                    max-width:100%;
+                }
+                .area__spot2{
+                    margin: 0 auto 21vw;
+
+                }
+            }
+            &--ttl{
+                top: -10.66vw;
+                width: 29vw;
+                height: 29vw;
+            }
+            &--txt{
+                margin: 0 auto 4.4vw;
+            }
+        }
+        .area__spot1{
+            padding-right: 9vw;
+            padding-left: 9vw;
+            margin-bottom: 21vw;
+            padding-bottom: 10vw;
+            &--chara1{
+                position: absolute;
+                width: 23.5vw;
+                right: 0;
+                top: -14vw;
+
+            }
+            &--chara2{
+                position: absolute;
+                width: 26vw;
+                left: 6vw;
+                top: -15vw;
+
+            }
+            &--blc{
+                display: block;
+                &-small{
+                    max-width: 100%;
+                    margin-bottom: 10vw;
+                }
+                &-img{
+                    width: 100%;
+                    height: 165px;
+                    margin: 0 auto 16px;
+                    position: relative;
+                    &test{
+                        margin-top: 8px;
+                        width: 80%;
+
+                    }
+                }
+
+            }
+        }
+        .area__spot2{
+            &--chara1{
+                position: absolute;
+                width: 24vw;
+                left: 2.66vw;
+                top: -10vw
+
+            }
+            &--chara2{
+                position: absolute;
+                width: 30.44vw;
+                right: -4.33vw;
+                top: -12vw;
+
+            }
+    
+        }
+        .area__spot3{
+            &--chara1{
+                position: absolute;
+                width: 17.6vw;
+                right: auto;
+                left: 5.6vw;
+                top: -8vw;
+            }
+        }
+    }
+
+}
+
+
+@include var.webpBg('.area__ttl', var.$imgpath+'ttl_area', 'png');
+@include var.webpBg('#spot1', var.$imgpath+'spot1-icon', 'png');
+@include var.webpBg('#spot2', var.$imgpath+'spot2-icon', 'png');
+@include var.webpBg('#spot3', var.$imgpath+'spot3-icon', 'png');

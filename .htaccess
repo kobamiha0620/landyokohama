@@ -1,0 +1,5 @@
+
+    AuthType Basic
+    AuthName "IDとPASSを入力"
+    AuthUserFile "/home/users/2/main.jp-663edf5c673f45/web/.htpasswd"
+    require valid-user
