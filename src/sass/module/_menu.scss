@@ -143,13 +143,16 @@ $background-color_1: #666;
 
 .header {
     width: 100%;
-    background-color: #45AD75;
     background-size: 100% auto;
     background-repeat: no-repeat;
-    padding: 39.38vw 0 3.77vw;
+    padding: 42vw 0 3.77vw;
     position: relative;
-    background-position: center top -2.7vw;
+    background-position: center top;
+    @media screen and (max-width: 1080px ) {
+        background-size: 120% auto;
+        padding: 50vw 0 3.77vw;
 
+    }
     &__chara{
         position: absolute;
         width: 208px;
@@ -301,14 +304,14 @@ $background-color_1: #666;
     }
     &__ttl{
         text-align: center;
-        color: #FFF;
+        color: #000;
         margin: 0 auto 30px;
         @include var.fz(22);
         line-height: 1.545;
     }
     &__subttl{
         text-align: center;
-        color: #FFF;
+        color: #000;
         margin: 0 auto;
         @include var.fz(16);
         line-height: 1.75;
@@ -330,7 +333,7 @@ $background-color_1: #666;
     }
     @media screen and (max-width: var.$spbp) {
         padding: 117vw 0 12.5vw;
-        background-position: center top 0;
+        background-size: 100% auto;
         &__chara{
             position: absolute;
             width: 50vw;
@@ -416,10 +419,10 @@ $background-color_1: #666;
 
 }
 
-@include var.webpBg('.header', var.$imgpath+'fv_pc', 'png');
+@include var.webpBg('.header', var.$imgpath+'img_fvpc');
 @include var.webpBg('.g-nav', var.$imgpath+'bg_menu', 'png');
 
 @media screen and (max-width: var.$spbp) {
-    @include var.webpBg('.header', var.$imgpath+'fv_sp', 'png');
+    @include var.webpBg('.header', var.$imgpath+'img_fvsp');
 
 }

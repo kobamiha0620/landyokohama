@@ -8,7 +8,13 @@
         padding: 57px 0;
         position: relative;
     }
-
+    &__note{
+        &--ttl{
+            text-align: center;
+            font-weight: bold;
+            @include var.fz(20);
+        }
+    }
     &__ttl{
         text-indent: -9999px;
         white-space: nowrap;

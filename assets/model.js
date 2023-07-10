@@ -161,7 +161,16 @@ $(window).on('load scroll', function() {
                                                 target.find('.fadein11').addClass('scrollin');
                                                 setTimeout(function(){
                                                   target.find('.fadein12').addClass('scrollin');
-                                                  
+                                                  setTimeout(function(){
+                                                    target.find('.fadein13').addClass('scrollin');
+                                                    setTimeout(function(){
+                                                      target.find('.fadein14').addClass('scrollin');
+                                                      setTimeout(function(){
+                                                        target.find('.fadein15').addClass('scrollin');
+                                                        
+                                                    },speed);
+                                                  },speed);
+                                                },speed);
                                               },speed);
                                             },speed);
                                         },speed);

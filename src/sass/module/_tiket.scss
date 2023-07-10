@@ -3,7 +3,7 @@
 
 
 .tiket{
-    background-color: var.$green;
+    background-color: var.$blue;
     .blc__inner{
         padding: 57px 0;
         position: relative;
@@ -20,7 +20,9 @@
             line-height: 1.5;
             letter-spacing: 1px;
             margin: 0 auto 12px;
-            padding-top: 68px;
+            // padding-top: 68px;
+            width: 80%;
+            padding: 10px;
         }
         &--img{
             background-color: #F9D7E6;
@@ -41,6 +43,12 @@
             letter-spacing: 1px;
             margin: 0 auto;
             width: 420px;
+        }
+        &--note{
+            text-align: center;
+            @include var.fz(12);
+            letter-spacing: 1px;
+            margin: 0 auto;
         }
     }
     &__notes{
@@ -146,15 +154,30 @@
             align-items: center;
         }
         &--small{
-            border-bottom: solid 1px #000;
-            width: 356px;
-            margin: 0 auto 33px;
-            padding: 56px 0 30px;
-            &txt{
-                @include var.fz(20);
-                line-height: 2;
+            padding: 20px 0 0;
+            margin: 0 auto;
+            &-wrap{
+                border-bottom: solid 1px #000;
+                margin: 0 auto 25px;
+                width: 356px;
+                padding-top: 40px;
+                padding-bottom: 20px;
+            }
+
+            &ttl{
+                color: var.$red;
                 text-align: center;
-                margin: 0 auto;
+                @include var.fz(20);
+                line-height: 1.2;
+                font-weight: 900;
+                margin: 0;
+                letter-spacing: 0.1em;
+            }
+            &txt{
+                @include var.fz(14);
+                line-height: 1.6;
+                text-align: center;
+                margin: 10px auto 0;
                 font-weight: 700;
                 letter-spacing: 1px;
             }
@@ -181,12 +204,34 @@
     }
     &__txt2{
         text-align: center;
-        @include var.fz(12);
-        line-height: 1.6;
+        @include var.fz(10);
+        line-height: 1.4;
         padding-bottom: 0;
-        margin: 0;
+        margin: 8px auto 0;
         letter-spacing: 0;
+        &.red{
+            color: var.$red;    
+        }
+        &.left{
+            text-align: left;
+        }
+        &.indent{
+            padding-left: 1em;
+        }
     }
+    &__txt3{
+        text-align: left;
+        text-indent:  -1em;
+        padding-left: 1em;
+        @include var.fz(10);
+        line-height: 1.4;
+        &--note{
+            padding-left: 1em;
+            @include var.fz(10);
+
+        }
+    }
+
     &__lowson{
         background-color: var.$red;
         border-radius: 40px;
@@ -202,6 +247,7 @@
         background-repeat: no-repeat;
         background-position: right 16px top 8px;
         background-size: 23px 23px;
+
         &--wrap{
             display: flex;
             justify-content: center;
@@ -210,11 +256,20 @@
         &:hover{
             opacity: 0.7;
         }
+        &.disable{
+            background: var.$red    ;
+            padding-right: 27px;
+            padding-top: 10px;
+            letter-spacing: 1px;
+            &:hover{
+                opacity: 1;
+            }
+        }
     }
     //access
     @media screen and (max-width: var.$spbp) {
         .blc__inner{
-            padding: 16.5vw 6.66vw;
+            padding: 16.5vw 4vw;
         }
         &__tokuten{
             .tiket__blc{
@@ -224,6 +279,8 @@
                 letter-spacing: 0;
                 margin: 0 auto 8vw;
                 padding-top: 15.2vw;
+
+
             }
             &--img{
                 width: 43.2vw;
@@ -259,7 +316,7 @@
             }
         }
         &__neko{
-            bottom: -18px;
+            bottom: -16vw;
             img{
                 width: 33.33vw;
                 height: auto;
@@ -271,7 +328,7 @@
             }
             &main{
                 li{
-                    padding: 17.6vw 6.66vw 16.2vw; 
+                    padding: 17.6vw 4vw 16.2vw; 
                     height: auto;
                 }
                 .yel{
@@ -283,20 +340,38 @@
     
         &__blc{
             margin: 0 auto;
+            padding: 0 4vw;
             &--ttl{
                 white-space: nowrap;
             }
             &--small{
-                width: 60vw;
-                margin: 0 auto 8.55vw;
-                padding: 15vw 0 8.55vw;
+                width: 100%;
+                margin: 0 auto;
+                padding: 5vw 0;
                 &txt{
+                    letter-spacing: 0;
+                }
+                &-wrap{
+                    border-bottom: solid 1px #000;
+                    margin: 0 auto 25px;
+                    width: 100%;
+                    padding-top: 40px;
+                    padding-bottom: 0;
+                }
+    
+                &ttl{
+                    color: var.$red;
+                    text-align: center;
+                    @include var.fz(18);
+                    line-height: 1.2;
+                    font-weight: 900;
+                    margin: 0;
                     letter-spacing: 0;
                 }
             }
         }
         &__blc2{
-            width: 62vw;
+            width: 100%;
             margin: 0 auto;
             padding-bottom: 9vw;
         }
@@ -317,7 +392,11 @@
     }
     
     &--subttl{
-        padding-top: 50px;
+        margin-top: 50px;
+        background: var.$blue;
+        color: #FFF;
+        border-radius: 30px;
+        display: block;
         margin-bottom: 0;
         br{
             display: none;
@@ -333,6 +412,7 @@
     }
     @media screen and (max-width: var.$spbp) {
         &--subttl{
+            padding-top: 10px;
             br{
                 display: block;
             }

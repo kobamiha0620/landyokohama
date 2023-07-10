@@ -52,7 +52,7 @@
         background-color: #FFF;
         border: solid 5px #000;
         border-radius: 20px;
-        padding: 60px 90px 35px;
+        padding: 60px 20px 35px;
 
         img {
             width: 100%;
@@ -66,7 +66,15 @@
         border: solid 5px #000;
         border-radius: 20px;
         padding: 80px 28px 36px;
-
+        &--sblc{
+            margin: 20px 0 0;
+            img{
+                width: 100%;
+                height: auto;
+                display: inline-block;
+                line-height: 1.1;
+            }
+        }
         &--wrapper {
             display: flex;
             justify-content: space-between;
@@ -405,9 +413,9 @@
         &--txt {
             a {}
 
-            br {
-                display: none;
-            }
+            // br {
+            //     display: none;
+            // }
         }
 
         &--txt2 {
@@ -1053,7 +1061,44 @@
         }
     }
 }
+#spot4{
+    background: url('../img/spot4-icon.png');
+    background-size: 100% auto;
 
+}
+#spot5{
+    background: url('../img/icon_secret.svg');
+    background-size: 100% auto;
+}
+
+.area__spottest--img{
+    &-wrap{
+        position: relative;
+        background: #ccc;
+        width: 100%;
+        display: block;
+        height: 200px;
+    }
+    padding: 30px 0;
+    width: 310px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    img{
+        width: 100%;
+        height: auto
+    }
+    @media screen and (max-width: var.$spbp) {
+        width: 60vw;
+    }
+
+}
+.area__spot--txt{
+    @media screen and (max-width: var.$spbp) {
+        width: 76vw;
+    }
+}
 @include var.webpBg('.area__ttl', var.$imgpath+'ttl_area', 'png');
 @include var.webpBg('#spot1', var.$imgpath+'spot1-icon', 'png');
 @include var.webpBg('#spot2', var.$imgpath+'spot2-icon', 'png');
