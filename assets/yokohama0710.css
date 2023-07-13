@@ -2766,6 +2766,12 @@ body {
 .tiket__blc2 {
   padding-bottom: 33px;
 }
+.tiket__subttl {
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.8;
+  margin: 0;
+}
 .tiket__subtxt {
   text-align: center;
   font-size: 0.875rem;

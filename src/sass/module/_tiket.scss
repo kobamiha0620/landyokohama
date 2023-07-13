@@ -187,6 +187,12 @@
         padding-bottom: 33px;
     }
 
+    &__subttl{
+        text-align: center;
+        @include var.fz(14);
+        line-height: 1.8;
+        margin: 0;
+    }
     &__subtxt{
         text-align: center;
         @include var.fz(14);
