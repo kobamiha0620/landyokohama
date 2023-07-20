@@ -1,19 +1,21 @@
 @use "./module/variable"as var;
 
-.fourdh{
+.fourdh {
     margin: 20px auto 5px;
     font-weight: bold;
     text-align: center;
     line-height: 1;
-    span{
+
+    span {
         background: #fc8424;
         color: #FFF;
         padding: 3px;
         display: block;
 
     }
-    &.ar{
-        span{
+
+    &.ar {
+        span {
             background: #7fd407;
         }
     }
@@ -66,15 +68,18 @@
         border: solid 5px #000;
         border-radius: 20px;
         padding: 80px 28px 36px;
-        &--sblc{
+
+        &--sblc {
             margin: 20px 0 0;
-            img{
+
+            img {
                 width: 100%;
                 height: auto;
                 display: inline-block;
                 line-height: 1.1;
             }
         }
+
         &--wrapper {
             display: flex;
             justify-content: space-between;
@@ -660,6 +665,7 @@
             &--txt {
                 margin-right: -20px;
                 margin-left: -20px;
+
                 br {
                     display: block;
                 }
@@ -671,6 +677,7 @@
                 margin-right: -20px;
                 margin-left: -20px;
                 line-height: 1;
+
                 .logoSoftbank {
                     width: 130px;
                     height: 20px;
@@ -760,6 +767,7 @@
     // position: relative;
     margin-top: 0;
     margin: 0 auto;
+
     @media screen and (max-width: var.$spbp) {
         width: 100%;
         display: block;
@@ -854,50 +862,58 @@
 
 //追記
 
-.area__spot--blc-imgsteps{
+.area__spot--blc-imgsteps {
     margin: 8px 0 0;
-    img{
+
+    img {
         width: 100%;
         height: auto
     }
 }
-.howto_taiken{
+
+.howto_taiken {
     text-align: center;
     margin: 20px auto 0;
     font-weight: 900;
 }
-.area__spot--qr-txt{
-    a{
+
+.area__spot--qr-txt {
+    a {
         color: #000;
         text-align: center;
 
     }
 }
-.questionnaire__blc{
-    a{
+
+.questionnaire__blc {
+    a {
         color: #000;
         text-align: center;
 
     }
 }
-.questionnaire{
 
-    &__ttl{
+.questionnaire {
+
+    &__ttl {
         text-decoration: none;
-        margin: 0 auto 0; 
+        margin: 0 auto 0;
         display: block;
         padding: 20px;
         border-radius: 40px;
-        &:hover{
+
+        &:hover {
             opacity: 0.7;
         }
     }
 }
-@media screen and (max-width: 768px){
+
+@media screen and (max-width: 768px) {
     .questionnaire {
         margin-top: 0;
         padding-top: 0;
-        &__ttl{
+
+        &__ttl {
             line-height: 1.2;
             padding-top: 10px;
             padding-bottom: 10px;
@@ -907,55 +923,65 @@
 
 
 //追記
-.area{
-    .accordion{
+.area {
+    .accordion {
         display: none;
-        &__ttl{
+
+        &__ttl {
             cursor: pointer;
             text-align: center;
-            span{
-                background: #7fd407;                    
+
+            span {
+                background: #7fd407;
                 border-radius: 40px;
                 display: inline-block;
                 padding: 10px 50px;
                 color: #FFF;
             }
-            &:hover{
+
+            &:hover {
                 opacity: 0.7;
             }
-            &.disable{
+
+            &.disable {
                 display: none;
             }
-            &+.fourdh02{
-                span{
+
+            &+.fourdh02 {
+                span {
                     background: #fc8424;
                 }
             }
         }
     }
-    &__noteblc{
+
+    &__noteblc {
         margin-top: 30px;
         padding-bottom: 20px;
         // padding-top: 20px;
     }
+
     @media screen and (max-width: var.$spbp) {
-        .area__spot1{
+        .area__spot1 {
             padding-right: 6vw;
             padding-left: 6vw;
         }
-        .accordion{
-            &__ttl{
+
+        .accordion {
+            &__ttl {
                 cursor: pointer;
                 margin-top: 10px;
                 margin-bottom: 9vw;
-                span{
-                    background: #7fd407;                    
+
+                span {
+                    background: #7fd407;
                     border-radius: 40px;
                     display: block;
                     padding: 10px 50px;
                     color: #FFF;
                 }
-                &:hover{
+
+                &:hover {
                     opacity: 1;
                 }
 
@@ -964,141 +990,264 @@
     }
 
 }
-.accordion__ttl{
+
+.accordion__ttl {
     margin: 0 auto;
-    
-    &.fourdh02{
-        span{
+
+    &.fourdh02 {
+        span {
             background: #fc8424;
 
         }
     }
 }
-.area__special{
-    border: solid 4px rgb(254,246,84);
+
+.area__special {
+    border: solid 4px rgb(254, 246, 84);
     border-radius: 6px;
     margin-top: 30px;
-    .area__spot1--blc-txt2{
+
+    .area__spot1--blc-txt2 {
         text-align: left;
     }
-    &--img{
+
+    &--img {
         max-width: 260px;
         margin: 0 auto 20px;
-        img{
+
+        img {
             width: 100%;
             height: auto;
         }
     }
-    &--ttl{
-        background: rgb(254,246,84);
+
+    &--ttl {
+        background: rgb(254, 246, 84);
         margin: 0;
         text-align: center;
         font-weight: bold;
         padding: 10px 0;
-        
-        br{
+
+        br {
             display: none;
         }
     }
-    &--inner{
+
+    &--inner {
         padding: 20px 20px 40px;
 
     }
+
     @media screen and (max-width: var.$spbp) {
         margin-top: 30px;
-        .area__spot1--blc-txt2{
+
+        .area__spot1--blc-txt2 {
             text-align: left;
         }
-        &--img{
+
+        &--img {
             max-width: 100%;
             margin: 0 auto 20px;
-            img{
+
+            img {
                 width: 100%;
                 height: auto;
             }
         }
-        &--ttl{
+
+        &--ttl {
             padding: 10px 0;
-            
-            br{
+
+            br {
                 display: block;
             }
         }
-        &--inner{
+
+        &--inner {
             padding: 20px 20px 40px;
-    
+
         }
     }
 }
-.area__special02{
+
+.area__special02 {
     margin: 50px auto 40px;
-    img{
+
+    img {
         width: 100%;
         height: auto;
     }
 }
-.area__special02--accordion{
+
+.area__special02--accordion {
     width: 100%;
     margin: 0 auto;
-    .area__spot--dl2{
+
+    .area__spot--dl2 {
         width: 50%;
         margin: 0 auto;
 
     }
+
     @media screen and (max-width: var.$spbp) {
         width: 100%;
         padding-top: 30px;
-        .area__spot--dl2{
+
+        .area__spot--dl2 {
             width: 80%;
             margin: 0 auto;
-    
+
         }
-        .questionnaire{
+
+        .questionnaire {
             padding-top: 0;
         }
-        .area__noteblc{
+
+        .area__noteblc {
             padding-bottom: 0;
         }
     }
 }
-#spot4{
+
+#spot4 {
     background: url('../img/spot4-icon.png');
     background-size: 100% auto;
 
 }
-#spot5{
+
+#spot5 {
     background: url('../img/icon_secret.svg');
     background-size: 100% auto;
 }
 
-.area__spottest--img{
-    &-wrap{
+#spot6 {
+    background: url('../img/spot5-icon.png');
+    background-size: 100% auto;
+}
+
+.area__spottest--img {
+    &-wrap {
         position: relative;
         background: #ccc;
         width: 100%;
         display: block;
         height: 200px;
     }
+
     padding: 30px 0;
     width: 310px;
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    img{
+
+    img {
         width: 100%;
         height: auto
     }
+
     @media screen and (max-width: var.$spbp) {
         width: 60vw;
     }
 
 }
-.area__spot--txt{
+
+//追記
+.area {
+    &__spot06 {
+        margin-top: 40px;
+
+        &--img {
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+        &--txt {
+            color: #444;
+            text-align: center;
+            line-height: 1.8;
+            padding: 0;
+            margin: 0 auto 20px;
+            @include var.fz(22);
+            span {
+                border-radius: 3px;
+                background-color: #E60055;
+                color: #FFF;
+                display: inline-block;
+                padding: 8px 10px;
+                line-height: 1;
+                font-weight: bold;
+                font-size: 0.8em;
+            }
+        }
+        &--blc {
+            .area__spot--qr-txt2 {
+                margin: 0 auto;
+                text-align: center;
+                max-width: 300px;
+                img {
+                    max-width: 300px;
+
+                    height: auto;
+                }
+            }
+
+
+
+            a {
+                display: block;
+                justify-content: center;
+                text-decoration: none;
+
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+        }
+
+        &--ttl {
+            text-align: center;
+            margin: 0 auto 10px;
+
+            span {
+                border-radius: 3px;
+                background-color: #E60055;
+                color: #FFF;
+                display: inline-block;
+                padding: 3px 10px;
+                line-height: 1;
+                font-weight: bold;
+                margin-right: 8px;
+            }
+        }
+
+        .area__spot1--blc-txt2 {
+            text-align: left;
+        }
+
+    }
+
     @media screen and (max-width: var.$spbp) {
-        width: 76vw;
+        &__spot06 {}
+        .area__spot--txt{
+            width: 100%;
+            margin: 20px auto;
+            @include var.fz(18);
+            &.mb0{
+                margin-bottom: 0;
+            }
+            &.mt6{
+                margin-top: 6px;
+            }
+        }
+        .area__spot1--blc-txt2{
+            text-align-last: left;
+        }
+        
     }
 }
+
 @include var.webpBg('.area__ttl', var.$imgpath+'ttl_area', 'png');
 @include var.webpBg('#spot1', var.$imgpath+'spot1-icon', 'png');
 @include var.webpBg('#spot2', var.$imgpath+'spot2-icon', 'png');
