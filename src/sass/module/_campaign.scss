@@ -1,28 +1,28 @@
 @use "./module/variable"as var;
 
 .campaignheader{
-    background: url('../img/campaign/top_pc.png');
+    background: url('../img/campaign/top_pc-yokohama.jpg');
     background-size: 100% auto;
     font-size: 0;
     line-height: 0;
     width: 100vw;
     padding-top: 59.8vw;
     @media screen and (max-width: var.$spbp) {
-        background: url('../img/campaign/top_sp.jpg');
+        background: url('../img/campaign/top_sp-yokohama.jpg');
         padding-top: 167.4vw;
         background-size: 100% auto;
 
     }
 }
 .campaign{
-    background: url('../img/campaign/bg_campaign.jpg');
+    background: url('../img/campaign/bg_campaign-yokohama.jpg');
     background-size: 100% auto;
     background-repeat: repeat-y;
     padding-bottom: 100px;
     &__inner{
         width: 700px;
         margin: 0 auto;
-        border: solid 5px #89d4db;
+        border: solid 5px #FFD469;
         border-radius: 20px;
         padding: 65px 50px 50px;
         background-color: #FFF;
@@ -54,7 +54,7 @@
         }
     }
     @media screen and (max-width: var.$spbp) {
-        background: url('../img/campaign/bg_campaign_sp.jpg');
+        background: url('../img/campaign/bg_campaign_sp-yokohama.jpg');
         background-repeat: repeat-y;
         background-size: 100% auto;
         padding: 0 6vw 10vw;
