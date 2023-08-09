@@ -373,7 +373,7 @@
     padding: 10vw 5vw 5vw;
   }
   .area__spot {
-    padding: 21vw 9vw 0;
+    padding: 21vw 6vw 0;
   }
   .area__spot--wrapper {
     display: block;
@@ -452,6 +452,7 @@
 .area .area__spot1--blc-img2 {
   width: 100%;
   margin-right: 0;
+  margin-top: 30px;
 }
 .area .area__spot1--blc-img2 img {
   width: 100%;
@@ -632,19 +633,6 @@
   .area .area__spot--dl-txt a br {
     display: block;
   }
-  .area .area__spot1--blc-img2 {
-    width: 100%;
-    margin-right: 0;
-    min-width: 100%;
-    margin-bottom: 20px;
-  }
-  .area .area__spot1--blc-img2 img {
-    width: 100%;
-    height: auto;
-  }
-  .area .area__spot1--blc-img2.pmap {
-    padding: 0;
-  }
   .area__spot--txt {
     margin-right: -20px;
     margin-left: -20px;
@@ -791,6 +779,57 @@
 .area__spot--blc-imgsteps img {
   width: 100%;
   height: auto;
+}
+.area__spot--blc-imgsteps-btn {
+  display: inline-block;
+}
+.area__spot--blc-imgstepsbtn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(90deg, rgb(251, 195, 39), rgb(243, 183, 22));
+  padding: 16px 0;
+  border-radius: 5px;
+  margin: 0 0 30px;
+}
+.area__spot--blc-imgstepsbtn span {
+  background-size: 100% auto;
+  white-space: nowrap;
+  text-indent: -9999px;
+  background-repeat: no-repeat;
+  display: block;
+  background: url("../img/txt_dlbtn.svg");
+  width: 178px;
+  height: 18px;
+  background-repeat: no-repeat;
+}
+.area__spot--blc-imgsteps.flex {
+  display: flex;
+}
+.area__spot--blc-imgsteps.flex .steps {
+  width: 50%;
+  min-width: 50%;
+  display: block;
+}
+.area__spot--blc-imgsteps.flex a:hover {
+  opacity: 0.7;
+}
+@media screen and (max-width: 768px) {
+  .area__spot--blc-imgstepsbtn {
+    padding: 10px 0;
+    border-radius: 3px;
+    margin: 0 0 8vw;
+  }
+  .area__spot--blc-imgstepsbtn span {
+    background-size: 100% auto;
+    white-space: nowrap;
+    text-indent: -9999px;
+    background-repeat: no-repeat;
+    display: block;
+    width: 73%;
+    height: 2.8vw;
+  }
 }
 
 .howto_taiken {
@@ -1015,6 +1054,75 @@
   }
 }
 
+.area__frame {
+  margin: 30px 0 0;
+}
+.area__frame--img {
+  padding: 10px;
+  border-radius: 3px;
+  font-size: 0;
+  background-color: #FFF;
+}
+.area__frame--img img {
+  width: 100%;
+  height: auto;
+}
+.area__frame--flex {
+  margin: 30px 0 0;
+  display: flex;
+  justify-content: space-between;
+}
+.area__frame--flex .area__frame--blc {
+  width: 49%;
+}
+.area__frame--blc {
+  color: #FFF;
+  margin: 0;
+  text-align: center;
+  border-radius: 4px;
+  padding: 20px 10px 10px;
+}
+.area__frame--blc.pink {
+  background-color: #ff3984;
+}
+.area__frame--blc.pink .area__frame--ttl {
+  color: #ff3984;
+}
+.area__frame--blc.yellow {
+  background-color: #f6c000;
+}
+.area__frame--blc.yellow .area__frame--ttl {
+  color: #f6c000;
+}
+.area__frame--blc.blue {
+  background-color: #0cc0df;
+}
+.area__frame--blc.blue .area__frame--ttl {
+  color: #0cc0df;
+}
+.area__frame--ttl {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.3125rem;
+  line-height: 1;
+  margin: 0 auto 10px;
+  letter-spacing: 1px;
+}
+.area__frame--ttl span {
+  background-color: #FFF;
+  display: inline-block;
+  padding: 8px 30px;
+  border-radius: 30px;
+}
+.area__frame--subttl {
+  color: #FFF;
+  font-size: 1rem;
+  margin: 10px 0;
+  line-height: 1.2;
+}
+.area__frame--subttl span {
+  font-size: 0.8em;
+}
 .area__spot06 {
   margin-top: 40px;
 }
@@ -1075,6 +1183,45 @@
   text-align: left;
 }
 @media screen and (max-width: 768px) {
+  .area__frame {
+    margin: 5vw 0 0;
+  }
+  .area__frame--img {
+    padding: 2vw;
+    border-radius: 3px;
+  }
+  .area__frame--flex {
+    margin: 5vw 0 0;
+    display: block;
+  }
+  .area__frame--flex .area__frame--blc {
+    width: 100%;
+  }
+  .area__frame--blc {
+    border-radius: 3px;
+    padding: 4vw 2vw 2vw;
+    margin-top: 5vw;
+  }
+  .area__frame--ttl {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.125rem;
+    line-height: 1;
+    margin: 0 auto 2vw;
+    letter-spacing: 1px;
+  }
+  .area__frame--ttl span {
+    padding: 1vw 4vw;
+    border-radius: 30px;
+  }
+  .area__frame--subttl {
+    font-size: 0.875rem;
+    margin: 10px 0;
+    line-height: 1.2;
+  }
+  .area__frame--subttl span {
+    font-size: 0.8em;
+  }
   .area .area__spot--txt {
     width: 100%;
     margin: 20px auto;

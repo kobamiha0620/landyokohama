@@ -185,15 +185,14 @@
                 @include var.fz(12);
             }
             &--subttl{
-                @include var.fz(40);
-
+                @include var.fz(32);
                 width: 12.8vw;
-                min-width: 12.8vw;
+                min-width: 2rem;
                 margin: 0;
                 }
             &--small{
                 align-items: flex-start;
-                min-height: 4.53vw;
+                min-height: 3.2vw;
                 height: 100%;
             }
             &--q{

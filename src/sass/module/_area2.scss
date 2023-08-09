@@ -288,7 +288,7 @@
         }
 
         &__spot {
-            padding: 21vw 9vw 0;
+            padding: 21vw 6vw 0;
 
             &--wrapper {
                 display: block;
@@ -399,7 +399,7 @@
     .area__spot1--blc-img2 {
         width: 100%;
         margin-right: 0;
-
+        margin-top: 30px;
         img {
             width: 100%;
             height: auto;
@@ -643,21 +643,7 @@
             }
         }
 
-        .area__spot1--blc-img2 {
-            width: 100%;
-            margin-right: 0;
-            min-width: 100%;
-            margin-bottom: 20px;
-
-            img {
-                width: 100%;
-                height: auto;
-            }
-
-            &.pmap {
-                padding: 0;
-            }
-        }
+     
 
         &__spot {
 
@@ -863,11 +849,62 @@
 //追記
 
 .area__spot--blc-imgsteps {
-    margin: 8px 0 0;
+    margin: 30px 0 0;
 
     img {
         width: 100%;
         height: auto
+    }
+    &-btn{
+        display: inline-block;
+        
+    }
+    &btn{
+        width: 90%;
+        display: flex;
+        margin: 0 auto 30px;
+        justify-content: center;
+        align-items: center;
+        background-image: linear-gradient(90deg, rgba(251, 195, 39, 1), rgba(243, 183, 22, 1));
+
+        padding: 13px 0;
+        border-radius: 5px;
+        span{
+            @include var.bg();
+            background: url('../img/txt_dlbtn.svg');
+            width: 178px;
+            height: 18px;
+            background-repeat: no-repeat;
+        }
+    }
+    &.flex{
+        display: flex;
+       .steps{
+            width: 50%;
+            min-width: 50%;
+            display: block;
+       }
+       a{
+        &:hover{
+            opacity: 0.7;
+        }
+       }
+    }
+    @media screen and (max-width: var.$spbp) {
+        margin: 8px 0 0;
+
+        &btn{
+
+    
+            padding: 10px 0;
+            border-radius: 3px;
+            margin: 0 auto 8vw;
+            span{
+                @include var.bg();
+                width: 68%;
+                height: 2.2vw;
+            }
+        }
     }
 }
 
@@ -1077,6 +1114,9 @@
         width: 100%;
         height: auto;
     }
+    @media screen and (max-width: var.$spbp) {
+        margin: 0 auto;
+    }
 }
 
 .area__special02--accordion {
@@ -1104,6 +1144,7 @@
         }
 
         .area__noteblc {
+            margin-top: 0;
             padding-bottom: 0;
         }
     }
@@ -1154,6 +1195,77 @@
 
 //追記
 .area {
+    &__frame{
+        margin: 30px 0 0;
+        &--img{
+            padding: 10px;
+            border-radius: 3px;
+            font-size: 0;
+            background-color: #FFF;
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        &--flex{
+            margin: 30px 0 0;
+            display: flex;
+            justify-content: space-between;
+            .area__frame--blc{
+                width: 49%;
+            }
+        }
+        &--blc{
+            color: #FFF;
+            margin: 0;
+            text-align: center;
+            border-radius: 4px;
+            padding: 20px 10px 10px;
+            &.pink{
+                background-color: #ff3984;
+                .area__frame--ttl{
+                    color: #ff3984;
+                }
+            }
+            &.yellow{
+                background-color: #f6c000;
+                .area__frame--ttl{
+                    color: #f6c000;
+                }
+            }
+            &.blue{
+                background-color: #0cc0df;
+                .area__frame--ttl{
+                    color: #0cc0df;
+                }
+            }
+        }
+        &--ttl{
+            text-align: center;
+            font-weight: bold;
+            @include var.fz(21);
+            line-height: 1;
+            margin: 0 auto 10px;
+            letter-spacing: 1px;
+
+            span{
+                background-color: #FFF;
+                display: inline-block;
+                padding: 8px 30px;
+                border-radius: 30px;
+            }
+        }
+        &--subttl{
+            color: #FFF;
+            @include var.fz(16);
+            margin: 10px 0;
+            line-height: 1.2;
+            span{
+                font-size: 0.8em;
+            }
+        }
+    }
     &__spot06 {
         margin-top: 40px;
 
@@ -1229,6 +1341,49 @@
     }
 
     @media screen and (max-width: var.$spbp) {
+        &__frame{
+            margin: 5vw 0 0;
+            &--img{
+                padding: 2vw;
+                border-radius: 3px;
+            }
+    
+            &--flex{
+                margin: 5vw 0 0;
+                display: block;
+                .area__frame--blc{
+                    width: 100%;
+                }
+            }
+            &--blc{
+
+                border-radius: 3px;
+                padding: 4vw 2vw 2vw;
+                margin-top: 5vw;
+                
+            }
+            &--ttl{
+                text-align: center;
+                font-weight: bold;
+                @include var.fz(18);
+                line-height: 1;
+                margin: 0 auto 2vw;
+                letter-spacing: 1px;
+    
+                span{
+                    padding: 1vw 4vw;
+                    border-radius: 30px;
+                }
+            }
+            &--subttl{
+                @include var.fz(14);
+                margin: 10px 0;
+                line-height: 1.2;
+                span{
+                    font-size: 0.8em;
+                }
+            }
+        }
         &__spot06 {}
         .area__spot--txt{
             width: 100%;

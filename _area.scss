@@ -220,7 +220,7 @@
 
         }
         &__spot{
-            padding: 21vw 9vw 0;
+            padding: 21vw 6vw 0;
             &--wrapper{
                 display: block;
                 .area__spot{
@@ -278,6 +278,7 @@
                     }
                 }
 
+
             }
         }
         .area__spot2{
@@ -308,6 +309,11 @@
         }
     }
 
+}
+
+//追記
+.area__spot1--blc-img2{
+    margin-top: 30px;
 }
 
 
