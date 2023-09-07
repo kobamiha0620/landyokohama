@@ -53,6 +53,12 @@
         &--txt{
             margin: 0;
             @include var.fz(14);
+            &-list{
+                @include var.fz(14);
+                margin: 0.8em 0;
+                text-indent: -1em;
+                padding-left: 1em;
+            }
         }
         &--subttl{
             @include var.fz(40);
@@ -98,7 +104,7 @@
                     align-items: center;
                   
                     width: 100%;
-                    min-height: 40px;
+                    // min-height: 40px;
                 }
             }
             .faq__blc--subttl{

@@ -1257,6 +1257,80 @@
   }
 }
 
+.colabogoods .goods__list {
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+@media screen and (max-width: 768px) {
+  .colabogoods .goods__list {
+    display: block;
+  }
+  .colabogoods .goods__list li {
+    width: 72.5vw;
+    max-width: 72.5vw;
+    margin: 0;
+  }
+  .colabogoods .goods__list--img {
+    width: 72.5vw;
+    height: 72.5vw;
+  }
+  .colabogoods .goods__list--img img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.colabo__notion {
+  max-width: 530px;
+  margin: 0 auto;
+  border: solid 1px #E70012;
+  border-radius: 10px;
+  padding: 20px 30px;
+}
+@media screen and (max-width: 768px) {
+  .colabo__notion {
+    padding: 10px 20px;
+  }
+}
+.colabo__notion--ttl {
+  color: #E70012;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 auto 10px;
+  font-size: 1.25rem;
+}
+.colabo__notion--txt {
+  margin: 0 auto;
+}
+.colabo__notion--txt span {
+  color: #E70012;
+}
+.colabo__blc {
+  max-width: 530px;
+  margin: 20px auto 30px;
+}
+.colabo__blc--ttl {
+  font-size: 1.125rem;
+  margin: 0 auto 10px;
+  font-weight: bold;
+}
+.colabo__blc--txt {
+  font-size: 0.9375rem;
+  margin: 0;
+}
+.colabo__blc--txt span {
+  color: #E70012;
+}
+.colabo__blc--txt2 {
+  font-size: 0.9375rem;
+  margin: 0;
+  text-indent: -1em;
+  padding-left: 1em;
+}
+.colabo__blc--txt2 span {
+  color: #E70012;
+}
+
 .is-no-webp .area__ttl {
   background-image: url(../img/ttl_area.png);
 }
